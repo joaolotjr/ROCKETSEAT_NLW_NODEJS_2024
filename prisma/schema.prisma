@@ -19,3 +19,9 @@ model Event {
 
   @@map("events")
 }
+
+model Attendee {
+  id Int @id @default(autoincrement())
+
+  @@map("attendees")
+}
