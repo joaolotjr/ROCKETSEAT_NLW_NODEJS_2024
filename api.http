@@ -7,3 +7,12 @@ Content-Type: application/json
     "details": "um Evento Para quem é apaixonado por programação",
     "maximumAttendees": 100
 } 
+###
+
+POST http://localhost:3333/events/97ed66dd-ce64-4444-a5ae-e12137ffb6e7/attendees
+Content-Type: application/json
+
+{
+    "name": "Diego Fernandes",
+    "email": "diego@rocket.com.br"
+}
