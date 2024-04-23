@@ -14,4 +14,8 @@ Content-Type: application/json
 {
     "name": "Diego Fernandes",
     "email": "diego1@rocket.com.br"
-}
+} 
+
+### 
+
+GET http://localhost:3333/events/a4f7d5d5-db24-4abd-b3f7-1e785aea9156
