@@ -3,15 +3,15 @@ Content-Type: application/json
 
 
 {
-    "title": "Unite Summit",
-    "details": "um Evento Para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "title": "NOVO EVENTO 2",
+    "details":null,
+    "maximumAttendees": 1
 } 
 ###
-POST http://localhost:3333/events/d8f1f375-760c-4911-b4a2-c985e518fd4e/attendees
+POST http://localhost:3333/events/a4f7d5d5-db24-4abd-b3f7-1e785aea9156/attendees
 Content-Type: application/json
 
 {
     "name": "Diego Fernandes",
-    "email": "diego2@rocket.com.br"
+    "email": "diego1@rocket.com.br"
 }
