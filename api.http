@@ -8,11 +8,10 @@ Content-Type: application/json
     "maximumAttendees": 100
 } 
 ###
-
-POST http://localhost:3333/events/97ed66dd-ce64-4444-a5ae-e12137ffb6e7/attendees
+POST http://localhost:3333/events/d8f1f375-760c-4911-b4a2-c985e518fd4e/attendees
 Content-Type: application/json
 
 {
     "name": "Diego Fernandes",
-    "email": "diego@rocket.com.br"
+    "email": "diego2@rocket.com.br"
 }
