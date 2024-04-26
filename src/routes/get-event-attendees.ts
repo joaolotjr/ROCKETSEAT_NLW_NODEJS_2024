@@ -1,6 +1,6 @@
 import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
-import {  z } from "zod";
+import {  nullable, number, z } from "zod";
 import { prisma } from "../lib/prisma";
 
 export async function getEventAttendees (app: FastifyInstance) {
@@ -11,10 +11,24 @@ export async function getEventAttendees (app: FastifyInstance) {
                     params: z.object({
                         eventId: z.string(). uuid(),
                     }),
-                    response: { },
+                    querystring: z.object({
+                        pageIndex: z.string().nullable().default('0').transform(Number),
+                    }),
+                    response: {  },
                 }
             }, async (request, reply) => {
                 const { eventId } = request.params
+                const { pageIndex } = request.query
+
+                const attendees = await prisma.attendee.findMany({
+                    where: {
+                        eventId,
+                    },
+                    take: 10,
+                    skip: 
+                })
+
+                return reply.send({ attendees })
 
                 
 
