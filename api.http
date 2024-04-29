@@ -30,5 +30,5 @@ GET http://localhost:3333/attendees/2/check-in
 
 ### 
 
-GET http://localhost:3333/events/d8f1f375-760c-4911-b4a2-c985e518fd4e/attendees
+GET http://localhost:3333/events/d8f1f375-760c-4911-b4a2-c985e518fd4e/attendees?query=ciego
 
