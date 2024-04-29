@@ -6,6 +6,8 @@ import { prisma } from "../lib/prisma"
 export async function checkIn(app: FastifyInstance) {
     app.withTypeProvider<ZodTypeProvider>().get('/attendees/:attendeeId/check-in', {        
         schema: {
+            summary: 'Check-In an Attendee',
+            tags: ['Check-Ins'],
             params: z.object({
                 attendeeId: z.coerce.number().int()
             }),
